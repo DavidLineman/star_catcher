@@ -12,8 +12,9 @@ Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
 
+require('popper.js')
 require("bootstrap")
-import "../stylesheets/application"
+import "../stylesheets/application";
 document.addEventListener("turbolinks:load", () => {
   $(function () {
     $('[data-toggle="tooltip"]').tooltip()
